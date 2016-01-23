@@ -7,19 +7,38 @@
 //
 
 import UIKit
+import AVFoundation
 
-class ViewController: UIViewController {
+class ViewController: UIViewController
+{
+    var soundPlayer:AVAudioPlayer = AVAudioPlayer()
 
-    override func viewDidLoad() {
+    override func viewDidLoad()
+    {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        let fileLocation = NSBundle.mainBundle().pathForResource("dubstep", ofType: ".mp3")
+        
+        do {
+            soundPlayer = try AVAudioPlayer(contentsOfURL: NSURL(fileURLWithPath: fileLocation!))
+            try AVAudioSession.sharedInstance().setCategory(AVAudioSessionCategoryAmbient)
+            try AVAudioSession.sharedInstance().setActive(true)
+        }
+        
+        catch
+        {
+            print(error)
+        }
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    @IBAction func playButtonPressed(sender: AnyObject)
+    {
+        soundPlayer.play()
     }
 
-
+    @IBAction func stopButtonPressed(sender: AnyObject)
+    {
+        soundPlayer.stop()
+    }
 }
 

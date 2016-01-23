@@ -12,6 +12,8 @@
 		0063B0811C53D152008EE6A3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0063B07F1C53D152008EE6A3 /* Main.storyboard */; };
 		0063B0831C53D152008EE6A3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0063B0821C53D152008EE6A3 /* Assets.xcassets */; };
 		0063B0861C53D152008EE6A3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0063B0841C53D152008EE6A3 /* LaunchScreen.storyboard */; };
+		0063B08E1C53D25C008EE6A3 /* dubstep.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0063B08D1C53D25C008EE6A3 /* dubstep.mp3 */; };
+		0063B0901C53D5A2008EE6A3 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0063B08F1C53D5A2008EE6A3 /* AVFoundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		0063B0821C53D152008EE6A3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0063B0851C53D152008EE6A3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0063B0871C53D152008EE6A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0063B08D1C53D25C008EE6A3 /* dubstep.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = dubstep.mp3; sourceTree = "<group>"; };
+		0063B08F1C53D5A2008EE6A3 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0063B0901C53D5A2008EE6A3 /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -38,6 +43,7 @@
 		0063B06F1C53D152008EE6A3 = {
 			isa = PBXGroup;
 			children = (
+				0063B08F1C53D5A2008EE6A3 /* AVFoundation.framework */,
 				0063B07A1C53D152008EE6A3 /* PlayingSound */,
 				0063B0791C53D152008EE6A3 /* Products */,
 			);
@@ -60,6 +66,7 @@
 				0063B0821C53D152008EE6A3 /* Assets.xcassets */,
 				0063B0841C53D152008EE6A3 /* LaunchScreen.storyboard */,
 				0063B0871C53D152008EE6A3 /* Info.plist */,
+				0063B08D1C53D25C008EE6A3 /* dubstep.mp3 */,
 			);
 			path = PlayingSound;
 			sourceTree = "<group>";
@@ -123,6 +130,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0063B08E1C53D25C008EE6A3 /* dubstep.mp3 in Resources */,
 				0063B0861C53D152008EE6A3 /* LaunchScreen.storyboard in Resources */,
 				0063B0831C53D152008EE6A3 /* Assets.xcassets in Resources */,
 				0063B0811C53D152008EE6A3 /* Main.storyboard in Resources */,
